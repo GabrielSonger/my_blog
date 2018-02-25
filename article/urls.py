@@ -7,8 +7,7 @@ urlpatterns = [
     # ex: /
     url(r'^$', views.home, name='home'),
     # ex:/1
-    url(r'^(?P<my_args>\d+)/$', views.detail, name='detail'),
-    url(r'^test/$', views.test, name='test')
+    url(r'^(?P<post_id>\d+)/$', views.detail, name='detail'),
     # ex: /polls/5/
     # url(r'^(?P<question_id>[0-9]+)/$', views.detail, name='detail'),
     # # ex: /polls/5/results/
